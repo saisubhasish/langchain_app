@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Langchain-app
+Version: 0.0.1
+Author: SaiSubhasish
+Author-email: saisubhasishrout777@gmail.com
+Requires-Dist: uvicorn
+Requires-Dist: fastapi
+Requires-Dist: langserve
+Requires-Dist: streamlit
+Requires-Dist: langchain
+Requires-Dist: sse_starlette
+Requires-Dist: python-dotenv
+Requires-Dist: langchain-core
+Requires-Dist: langchain-openai
+Requires-Dist: langchain_community
