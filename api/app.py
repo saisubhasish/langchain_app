@@ -3,7 +3,6 @@ import uvicorn
 from fastapi import FastAPI
 from dotenv import load_dotenv
 from langserve import add_routes
-from langchain_community.llms import Ollama
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
 
@@ -17,11 +16,6 @@ app=FastAPI(
     description='A simple API server'
 )
 
-add_routes(
-    app,
-    ChatOpenAI(),
-    path='/openai'
-)
 model=ChatOpenAI()
 
 prompt1=ChatPromptTemplate.from_template("Write me a blog about {topic} with 100 words.")
